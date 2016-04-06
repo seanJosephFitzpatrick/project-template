@@ -1,8 +1,10 @@
 # Irish Constituencies Neo4j Database
-###### Student name, G00123456
+###### Sean Fitzpatrick, G00294191
 
 ## Introduction
 Give a summary here of what your project is about.
+
+The project is a Graph Database representing the Parliamentary constituencies in the Republic of Ireland. The Candidates who ran in those Constiuencies. The parties the Candidates belong.
 
 ## Database
 Explain how you created your database, and how information is represented in it.
