@@ -1,0 +1,158 @@
+//Relationship for Carlow Kilkenny Candidates
+MATCH	(a: Candidate_CK),	(b: Constituency	{name:	"Carlow Kilkenny"	}	)
+CREATE	(a)-[:RAN_IN_ELECTION]->(b)
+
+//Relationship for Cavan–Monaghan Candidates
+MATCH	(a: Candidate_CM),	(b: Constituency	{name:	"Cavan Monaghan"	}	)
+CREATE	(a)-[:RAN_IN_ELECTION]->(b)
+
+//Relationship for Clare Candidates
+MATCH	(a: Candidate_Clare),	(b: Constituency	{name:	"Clare"	}	)
+CREATE	(a)-[:RAN_IN_ELECTION]->(b)
+
+//Relationship for CORK East Candidates
+MATCH	(a: Candidate_CE),	(b: Constituency	{name:	"Cork East"	}	)
+CREATE	(a)-[:RAN_IN_ELECTION]->(b)
+
+//Relationship for CORK North Central Candidates
+MATCH	(a: Candidate_CNC),	(b: Constituency	{name:	"Cork North Central"	}	)
+CREATE	(a)-[:RAN_IN_ELECTION]->(b)
+
+//Relationship for CORK North West Candidates
+MATCH	(a: Candidate_CNW),	(b: Constituency	{name:	"Cork North West"	}	)
+CREATE	(a)-[:RAN_IN_ELECTION]->(b)
+
+//Relationship for CORK South Central Candidates
+MATCH	(a: Candidate_CSC),	(b: Constituency	{name:	"Cork South Central"	}	)
+CREATE	(a)-[:RAN_IN_ELECTION]->(b)
+
+//Relationship for CORK South West Candidates
+MATCH	(a: Candidate_CSW),	(b: Constituency	{name:	"Cork Souht West"	}	)
+CREATE	(a)-[:RAN_IN_ELECTION]->(b)
+
+//Relationship for Donegal Candidates
+MATCH	(a: Candidate_Donegal),	(b: Constituency	{name:	"Donegal"	}	)
+CREATE	(a)-[:RAN_IN_ELECTION]->(b)
+
+//Relationship for Dublin Bay North Candidates
+MATCH	(a: Candidate_DBN),	(b: Constituency	{name:	"Dublin Bay North"	}	)
+CREATE	(a)-[:RAN_IN_ELECTION]->(b)
+
+//Relationship for Dublin Bay South Candidates
+MATCH	(a: Candidate_DBS),	(b: Constituency	{name:	"Dublin Bay South"	}	)
+CREATE	(a)-[:RAN_IN_ELECTION]->(b)
+
+//Relationship for Dublin Central Candidates
+MATCH	(a: Candidate_D_Central),	(b: Constituency	{name:	"Dublin Central"	}	)
+CREATE	(a)-[:RAN_IN_ELECTION]->(b)
+
+//Relationship for Dublin Fingal Candidates
+MATCH	(a: Candidate_D_Fingal),	(b: Constituency	{name:	"Dublin Fingal"	}	)
+CREATE	(a)-[:RAN_IN_ELECTION]->(b)
+
+//Relationship for Dublin Mid West Candidates
+MATCH	(a: Candidate_D_MW),	(b: Constituency	{name:	"Dublin Mid West"	}	)
+CREATE	(a)-[:RAN_IN_ELECTION]->(b)
+
+
+//Relationship for Dublin North West Candidates
+MATCH	(a: Candidate_D_NW),	(b: Constituency	{name:	"Dublin North West"	}	)
+CREATE	(a)-[:RAN_IN_ELECTION]->(b)
+
+
+//Relationship for Dublin Rathdown Candidates
+MATCH	(a: Candidate_Rathdown),	(b: Constituency	{name:	"Dublin Rathdown"	}	)
+CREATE	(a)-[:RAN_IN_ELECTION]->(b)
+
+//Relationship for Dublin South Central Candidates
+MATCH	(a: Candidate_SC),	(b: Constituency	{name:	"Dublin South Central"	}	)
+CREATE	(a)-[:RAN_IN_ELECTION]->(b)
+
+//Relationship for Dublin South West Candidates
+MATCH	(a: Candidate_DSW),	(b: Constituency	{name:	"Dublin South West"	}	)
+CREATE	(a)-[:RAN_IN_ELECTION]->(b)
+
+//Relationship for Dublin West Candidates
+MATCH	(a: Candidate_D_West),	(b: Constituency	{name:	"Dublin West"	}	)
+CREATE	(a)-[:RAN_IN_ELECTION]->(b)
+
+//Relationship for Dun Laoghaire Candidates
+MATCH	(a: Candidate_DunLaoghaire),	(b: Constituency	{name:	"Dún Laoghaire"	}	)
+CREATE	(a)-[:RAN_IN_ELECTION]->(b)
+
+//Relationship for Galway East Candidates
+MATCH	(a: Candidate_GalwayEast),	(b: Constituency	{name:	"Galway East"	}	)
+CREATE	(a)-[:RAN_IN_ELECTION]->(b)
+
+//Relationship for Galway West Candidates
+MATCH	(a: Candidate_GalwayWest),	(b: Constituency	{name:	"Galway West"	}	)
+CREATE	(a)-[:RAN_IN_ELECTION]->(b)
+
+//Relationship for Kerry Candidates
+MATCH	(a: Candidate_Kerry),	(b: Constituency	{name:	"Kerry"	}	)
+CREATE	(a)-[:RAN_IN_ELECTION]->(b)
+
+//Relationship for Kildare North Candidates
+MATCH	(a: Candidate_KildareNorth),	(b: Constituency	{name:	"Kildare North"	}	)
+CREATE	(a)-[:RAN_IN_ELECTION]->(b)
+
+//Relationship for Kildare South Candidates
+MATCH	(a: Candidate_KildareSouth),	(b: Constituency	{name:	"Kildare South"	}	)
+CREATE	(a)-[:RAN_IN_ELECTION]->(b)
+
+//Relationship for Laois Candidates
+MATCH	(a: Candidate_Laois),	(b: Constituency	{name:	"Laois"	}	)
+CREATE	(a)-[:RAN_IN_ELECTION]->(b)
+
+//Relationship for Limerick City Candidates
+MATCH	(a: Candidate_LimerickCity),	(b: Constituency	{name:	"Limerick City"	}	)
+CREATE	(a)-[:RAN_IN_ELECTION]->(b)
+
+//Relationship for Limerick County Candidates
+MATCH	(a: Candidate_LimerickCounty),	(b: Constituency	{name:	"Limerick County"	}	)
+CREATE	(a)-[:RAN_IN_ELECTION]->(b)
+
+//Relationship for Longford Westmeath Candidates
+MATCH	(a: Candidate_LongfordWestMeath),	(b: Constituency	{name:	"Longford Westmeath"	}	)
+CREATE	(a)-[:RAN_IN_ELECTION]->(b)
+
+//Relationship for Louth Candidates
+MATCH	(a: Candidate_Louth),	(b: Constituency	{name:	"Louth"	}	)
+CREATE	(a)-[:RAN_IN_ELECTION]->(b)
+
+//Relationship for Mayo Candidates
+MATCH	(a: Candidate_Mayo),	(b: Constituency	{name:	"Mayo"	}	)
+CREATE	(a)-[:RAN_IN_ELECTION]->(b)
+
+//Relationship for Meath East Candidates
+MATCH	(a: Candidate_MeathEast),	(b: Constituency	{name:	"Meath East"	}	)
+CREATE	(a)-[:RAN_IN_ELECTION]->(b)
+
+//Relationship for Meath West Candidates
+MATCH	(a: Candidate_MeathWest),	(b: Constituency	{name:	"Meath West"	}	)
+CREATE	(a)-[:RAN_IN_ELECTION]->(b)
+
+//Relationship for Roscommon Galway Candidates
+MATCH	(a: Candidate_RoscommonGalway),	(b: Constituency	{name:	"Roscommon Galway"	}	)
+CREATE	(a)-[:RAN_IN_ELECTION]->(b)
+
+//Relationship for Sligo Leitrim Candidates
+MATCH	(a: Candidate_SligoLeitrim),	(b: Constituency	{name:	"Sligo Leitrim"	}	)
+CREATE	(a)-[:RAN_IN_ELECTION]->(b)
+
+//Relationship for Tipperary Candidates
+MATCH	(a: Candidate_Tipperary),	(b: Constituency	{name:	"Tipperary"	}	)
+CREATE	(a)-[:RAN_IN_ELECTION]->(b)
+
+
+//Relationship for Waterford Candidates
+MATCH	(a: Candidate_Waterford),	(b: Constituency	{name:	"Waterford"	}	)
+CREATE	(a)-[:RAN_IN_ELECTION]->(b)
+
+//Relationship for Wexford Candidates
+MATCH	(a: Candidate_Wexford),	(b: Constituency	{name:	"Wexford"	}	)
+CREATE	(a)-[:RAN_IN_ELECTION]->(b)
+
+//Relationship for Wicklow Candidates
+MATCH	(a: Candidate_Wicklow),	(b: Constituency	{name:	"Wicklow"	}	)
+CREATE	(a)-[:RAN_IN_ELECTION]->(b)
