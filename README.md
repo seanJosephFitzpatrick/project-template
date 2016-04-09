@@ -9,7 +9,7 @@ The project is a Graph Database representing the Parliamentary constituencies in
 ## Database
 Explain how you created your database, and how information is represented in it.
 
-*Creating Constituencies*
+**Creating Constituencies**
 There are 40 nodes representing the Constituencies of Ireland. The CREATE clause is used to create multiple node, labels and properties.
 The labels on these nodes are the individual names of each Constituency. Each node contains 4 properties relating to each Constituency.
 * Name : Idividual name of each Constituency.
@@ -21,7 +21,7 @@ CREATE	(	Carlow_Kilkenny	:	Constituency	{	name	:	"Carlow Kilkenny"	,	Population	
 
 ````
 
-*Creating Candidates*
+**Creating Candidates**
 There are 552 nodes representing Candidates that ran in the 2016 Election. The labels on these nodes are individual names of Candidats. 
 Each node contains five properties.
 * Party : The name of the political party the candidate belongs.
@@ -35,7 +35,7 @@ CREATE	(	David_Lloyd	:	Candidate	{	Party	:	"Direct Democracy"	,	Constituency	:	
 
 ````
 
-*Creating Irish Political Parties*
+**Creating Irish Political Parties**
 There are 17 nodes representing Irish Political parties in Ireland. The labels on these nodes are the individual party names.
 Nodes vary on properties depending on the party and if they have a leader. Most contain four properties.
 * Party name : The name of the party.
@@ -46,6 +46,22 @@ Nodes vary on properties depending on the party and if they have a leader. Most 
 CREATE	(	Fine_Gael	:	Irish_Political_Party	{	PartyName	:	"Fine Gael"	,	Leader	:	"Enda Kenny"	,	TranslationEnglishIrish	:	"Clan of the Gaels"	,	Founded	:	1933	}	)
 ````
 [The CREATE clause is used to create graph elements — nodes and relationships.][http://neo4j.com/docs/stable/query-create.html]
+
+**Creating the relationshis**
+The MATCH and CREATE clause are both used to create a relationship between two node. The MATCH claue finds the nodes based on names or the properties of a given node. When the nodes are matched the CREATE clause is used to create the relationship.         
+There are two different kinds of relationships between the nodes in the database. The relationship between the candidates and the associated constituency and between the candidate and their associated party.
+* RAN IN ELECTION : Connects the candidate to the constituency associated with election.
+````
+MATCH	(a: Candidate {Constituency: "Candidate_Clare"}),	(b: Constituency	{name:	"Clare"	}	)
+CREATE	(a)-[:RAN_IN_ELECTION]->(b)
+````
+* Party member : Connects the candidate to the associated party.
+````
+MATCH	(a: Irish_Political_Party {PartyName: "Independent Alliance"}),	(b: Candidate	{Party:	"Independent Alliance"}	)
+CREATE	(a)-[:Party_Member]->(b)
+````
+[The MATCH clause is used to search for the pattern described in it.][http://neo4j.com/docs/stable/query-match.html]
+
 
 ## Queries
 Summarise your three queries here.
