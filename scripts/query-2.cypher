@@ -1,9 +1,8 @@
-// Describe your query
-// at the start
-// in comments.
+// This query retreives the number of leaf nodes within the graph database.
 
 
-MATCH
-	(n)
-RETURN
-	n;
+//Query 2
+START n=node(*) 
+MATCH n-[r*]->l
+WHERE NOT(l-->()) 
+RETURN DISTINCT LABELS(l) as Nodes, COUNT(l) as Number_Of_Leaf_Nodes;

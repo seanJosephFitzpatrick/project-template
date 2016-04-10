@@ -2,7 +2,6 @@
 ###### Sean Fitzpatrick, G00294191
 
 ## Introduction
-Give a summary here of what your project is about.
 
 The project is a Graph Database representing the Parliamentary constituencies in the Republic of Ireland. The Candidates who ran in those Constiuencies. The parties the Candidates belong. The database is Neo4j database management system and is a NoSQL Graph Database.
 
@@ -20,7 +19,6 @@ Not only SQL is a database that does not use the Relationship model.
 
 
 ## Database
-Explain how you created your database, and how information is represented in it.
 
 **Creating Constituencies**
 There are 40 nodes representing the Constituencies of Ireland. The CREATE clause is used to create multiple node, labels and properties.
@@ -81,8 +79,9 @@ CREATE	(a)-[:Party_Member]->(b)
 
 
 ## Queries
-Summarise your three queries here.
-Then explain them one by one in the following sections.
+1. Retrieve Nodes, Labels, Relationships.
+2. Retrieve Leaf nodes.
+3. Retrieve Number of votes for each Candidate.
 
 #### Query one : Graph database 
 This query retreives the labels, nodes and relationships of a graph database. It returns the distinct labels, nodes and relationships. A count is also returned.
