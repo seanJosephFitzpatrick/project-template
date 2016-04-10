@@ -11,11 +11,11 @@ The project is a Graph Database representing the Parliamentary constituencies in
 Each node represents an entity (a person, place, thing, category or other piece of data), and each relationship represents how two nodes are associated. This general-purpose structure allows you to model all kinds of scenarios – from a system of roads, to a network of devices, to a population’s medical history or anything else defined by relationships.     
 
 **What is a Graph Database?**
-A graph database is an online database management system with Create, Read, Update and Delete (CRUD) operations working on a graph data model.
+A graph database is an online database management system with Create, Read, Update and Delete (CRUD) operations working on a graph data model.      
 [Why Graph Databaes][http://neo4j.com/why-graph-databases/]
 
 **NoSQL** 
-Not only SQL is a database that does not use the Relationship model.
+Not only SQL is a database that does not use the Relationship model.            
 [No SQL databse : Overview][https://www.thoughtworks.com/insights/blog/nosql-databases-overview]
 
 
@@ -23,7 +23,7 @@ Not only SQL is a database that does not use the Relationship model.
 Explain how you created your database, and how information is represented in it.
 
 **Creating Constituencies**
-There are 40 nodes representing the Constituencies of Ireland. The [CREATE]:http://neo4j.com/docs/stable/query-create.html clause is used to create multiple node, labels and properties.
+There are 40 nodes representing the Constituencies of Ireland. The CREATE clause is used to create multiple node, labels and properties.
 The label on these group of nodes are Constituency. Each node contains 4 properties relating to each Constituency.
 * Name : Idividual name of each Constituency.
 * Population : The population of each Constituency.
