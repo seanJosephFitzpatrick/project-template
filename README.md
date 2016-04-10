@@ -47,7 +47,7 @@ CREATE	(	Fine_Gael	:	Irish_Political_Party	{	PartyName	:	"Fine Gael"	,	Leader	:	
 ````
 [The CREATE clause is used to create graph elements — nodes and relationships.][http://neo4j.com/docs/stable/query-create.html]
 
-**Creating the relationshis**
+**Creating the relationships**
 The MATCH and CREATE clause are both used to create a relationship between two node. The MATCH claue finds the nodes based on names or the properties of a given node. When the nodes are matched the CREATE clause is used to create the relationship.         
 There are two different kinds of relationships between the nodes in the database. The relationship between the candidates and the associated constituency and between the candidate and their associated party.
 * RAN IN ELECTION : Connects the candidate to the constituency associated with election.
