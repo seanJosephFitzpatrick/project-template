@@ -1,0 +1,11 @@
+//Refference for delete all nodes and relationships
+MATCH (n)
+OPTIONAL MATCH (n)-[r]-()
+DELETE n,r
+
+https://help.github.com/articles/pushing-to-a-remote/
+http://stackoverflow.com/questions/14252591/delete-all-nodes-and-relationships-in-neo4j-1-8
+https://github.com/Kunena/Kunena-Forum/wiki/Create-a-new-branch-with-git-and-manage-branches
+https://en.wikipedia.org/wiki/List_of_political_parties_in_the_Republic_of_Ireland
+https://en.wikipedia.org/wiki/Parliamentary_constituencies_in_the_Republic_of_Ireland
+https://en.wikipedia.org/wiki/Carlow%E2%80%93Kilkenny_%28D%C3%A1il_%C3%89ireann_constituency%29

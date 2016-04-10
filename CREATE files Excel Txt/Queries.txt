@@ -1,0 +1,16 @@
+//Query 1
+START n=node(*)
+MATCH n-[r]-()
+RETURN DISTINCT LABELS(n) as labels, TYPE(r) as Relationship, n as node, COUNT(n) as nodes, count(r) as Number_of_Realtionships
+ORDER BY Number_of_Realtionships desc
+
+//Query 2
+START n=node(*) 
+MATCH n-[r*]->l
+WHERE NOT(l-->()) 
+RETURN DISTINCT LABELS(l) as Nodes, COUNT(l) as Number_Of_Leaf_Nodes;
+
+//Query 3
+MATCH (n:Candidate)
+RETURN COLLECT(n.name) as Candidate,(n.FinalCount) as Votes
+ORDER BY TOINT(n.FinalCount) desc
