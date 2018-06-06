@@ -5,18 +5,6 @@
 
 The project is a Graph Database representing the Parliamentary constituencies in the Republic of Ireland. The Candidates who ran in those Constiuencies. The parties the Candidates belong. The database is Neo4j database management system and is a NoSQL Graph Database.
 
-**What is a Graph?**
-*A graph is composed of two elements: a node and a relationship.        
-Each node represents an entity (a person, place, thing, category or other piece of data), and each relationship represents how two nodes are associated. This general-purpose structure allows you to model all kinds of scenarios – from a system of roads, to a network of devices, to a population’s medical history or anything else defined by relationships.     
-
-**What is a Graph Database?**
-A graph database is an online database management system with Create, Read, Update and Delete (CRUD) operations working on a graph data model.      
-[Why Graph Databaes][http://neo4j.com/why-graph-databases/]
-
-**NoSQL** 
-Not only SQL is a database that does not use the Relationship model.            
-[No SQL databse : Overview][https://www.thoughtworks.com/insights/blog/nosql-databases-overview]
-
 
 ## Database
 
