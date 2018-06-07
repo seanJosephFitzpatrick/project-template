@@ -1,7 +1,7 @@
 # Irish Constituencies Neo4j Database
 
 ## Introduction           
-#### 4th year project            
+#### 4th year graph-theory project            
 
 The project is a Graph Database representing the Parliamentary constituencies in the Republic of Ireland. The Candidates who ran in those Constiuencies. The parties the Candidates belong. The database is Neo4j database management system and is a NoSQL Graph Database.
 
