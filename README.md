@@ -1,5 +1,4 @@
 # Irish Constituencies Neo4j Database
-###### Sean Fitzpatrick, G00294191
 
 ## Introduction
 
